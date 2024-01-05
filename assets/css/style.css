@@ -348,7 +348,7 @@ h1::after {
 
 #details-sec {
     background: url(../img/details.jpg) no-repeat center center;
-    padding: 0;
+    padding: 30px 50px;
     -webkit-background-size: cover;
     background-size: cover;
     color: white;
