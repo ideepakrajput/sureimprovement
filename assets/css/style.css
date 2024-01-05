@@ -344,3 +344,20 @@ h1::after {
     margin: 0;
     line-height: 0.8;
 }
+
+
+#details-sec {
+    background: url(../img/details.jpg) no-repeat center center;
+    padding: 0;
+    -webkit-background-size: cover;
+    background-size: cover;
+    color: white;
+}
+
+#details-sec a {
+    text-emphasis: none;
+    font-weight: bolder;
+    font-size: larger;
+    text-decoration: none;
+    color: white;
+}
