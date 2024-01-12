@@ -479,6 +479,10 @@ h1::after {
         flex-direction: column;
         text-align: center;
     }
+
+    .tag-line h2 {
+        font-size: 16px;
+    }
 }
 
 .subject-container h2 {
