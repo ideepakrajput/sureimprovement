@@ -364,7 +364,7 @@ h1::after {
     color: #333;
     border-radius: 10px;
     width: 300px;
-    height: 220px;
+    height: 230px;
     padding: 10px;
     margin: 10px;
     text-align: center;
@@ -521,7 +521,7 @@ h1::after {
     padding: 10px 25px;
     border-radius: 10px;
     font-size: 16px;
-    width: 100px;
+    width: 150px;
     text-wrap: wrap;
     font-weight: bold;
     color: white;
