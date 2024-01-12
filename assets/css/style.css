@@ -27,7 +27,7 @@ NAVBAR STYLES
 }
 
 #menu {
-    background-color: rgba(28, 43, 75, 1);
+    background-color: rgba(28, 43, 75, 0.89);
     color: #fff;
     font-size: 12px;
     font-weight: 900;
@@ -484,19 +484,69 @@ h1::after {
 .subject-container h2 {
     font-size: 24px;
     font-weight: bold;
+    margin-bottom: 20px;
     color: rgba(28, 43, 75, 1);
 }
 
+.subject-container {
+    background-color: #fff;
+    color: #333;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s, transform 0.3s;
+}
+
+.subject-container:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    transform: scale(1.05);
+}
 
 .subject-container ul {
     list-style-type: none;
     padding: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    justify-content: center;
+    column-gap: 10px;
+    gap: 10px;
+    flex-wrap: wrap;
 }
 
 .subject-container li {
+    background-color: rgba(28, 43, 75, 0.89);
+    padding: 10px 25px;
+    border-radius: 10px;
     font-size: 16px;
+    width: 100px;
+    text-wrap: wrap;
     font-weight: bold;
-    margin-bottom: 10px;
+    color: white;
+}
+
+.subject li {
+    background-color: rgba(28, 43, 75, 0.89);
+    padding: 10px 25px;
+    border-radius: 10px;
+    font-size: 16px;
+    width: 150px;
+    text-wrap: wrap;
+    font-weight: bold;
+    color: white;
+}
+
+.subject-container i {
+    font-size: 28px;
+    display: block;
+}
+
+.subject-container li:hover {
+    background-color: rgba(28, 43, 75, 1);
+    color: #1A94C4;
+    transform: scale(1.05);
 }
 
 .why-si {
