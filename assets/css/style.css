@@ -1,21 +1,9 @@
-﻿/*=============================================================
-    Authour URI: www.binarytheme.com
-    License: Commons Attribution 3.0
-
-    http://creativecommons.org/licenses/by/3.0/
-
-    100% To use For Personal And Commercial Use.
-    IN EXCHANGE JUST GIVE US CREDITS AND TELL YOUR FRIENDS ABOUT US
-   
-    ========================================================  */
-
-/* =============================================================
-   GENERAL STYLES
- ============================================================ */
-body {
+﻿body {
     font-family: 'Open Sans', sans-serif;
     line-height: 30px;
     font-size: 14px;
+    margin: 0;
+    padding: 0;
 }
 
 .set-pad {
@@ -28,7 +16,7 @@ body {
 }
 
 /*=====================================
-  NAVBAR STYLES 
+NAVBAR STYLES 
     ===================================*/
 
 .logo-custom {
@@ -39,7 +27,7 @@ body {
 }
 
 #menu {
-    background-color: rgba(28, 43, 75, 1);
+    background-color: rgba(28, 43, 75, 0.89);
     color: #fff;
     font-size: 12px;
     font-weight: 900;
@@ -66,6 +54,16 @@ body {
     border-top: none;
     margin-top: 20px;
 }
+
+
+/* p {
+    color: rgba(28, 43, 75, 1);
+    color: #333;
+    color: #005E5A;
+    color: #1A94C4;
+    color: #2f9484;
+    color: #2d3d5a;
+} */
 
 
 /*=====================================
@@ -216,7 +214,7 @@ h1::after {
   FACULTY STYLES 
   ===================================*/
 #faculty-sec {
-    background-color: #000;
+    background: rgba(28, 43, 75, 1);
     color: #fff;
 }
 
@@ -261,17 +259,8 @@ h1::after {
 #contact-sec {
     padding-top: 10px;
     padding-bottom: 60px;
-    background: url(../img/contact.jpg) no-repeat center center;
-    padding: 0;
-    -webkit-background-size: cover;
-    background-size: cover;
     color: #fff;
-    background-attachment: fixed;
-}
-
-#contact-sec .overlay {
-    background: rgba(0, 0, 0, 0.76);
-    min-height: 600px;
+    background-color: rgba(28, 43, 75, 1)
 }
 
 #contact-sec h1 {
@@ -288,7 +277,7 @@ h1::after {
   ===================================*/
 #footer {
     padding: 5px 20px;
-    background-color: #2d3d5a;
+    background: rgba(28, 43, 75, 0.89);
     text-align: right;
     color: #fff;
     font-size: 15px;
@@ -316,9 +305,9 @@ h1::after {
 
 /* Section: Counters */
 .section-counters {
-    background: url(../img/counters-bg.png) repeat fixed center / contain;
+    background: white;
     width: 100%;
-    padding: 100px 0;
+    padding: 30px 0;
     position: relative;
 }
 
@@ -329,35 +318,260 @@ h1::after {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
 }
 
 .section-counters h4 {
-    color: #fff;
-    /* margin: 25px 0 0; */
+    font-weight: bold;
 }
 
 .site-section p.counter {
     font-size: 100px;
     font-weight: 300;
-    color: #fff;
+    color: rgba(28, 43, 75, 1);
     margin: 0;
-    line-height: 0.8;
+    line-height: 1.25;
 }
 
-
-#details-sec {
-    background: url(../img/details.jpg) no-repeat center center;
-    padding: 30px 50px;
-    -webkit-background-size: cover;
-    background-size: cover;
-    color: white;
-}
-
-#details-sec a {
+.contact a {
     text-emphasis: none;
     font-weight: bolder;
     font-size: larger;
     text-decoration: none;
     color: white;
+}
+
+.contact i {
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.contact a:hover {
+    text-emphasis: none;
+    font-weight: bolder;
+    font-size: larger;
+    text-decoration: none;
+    color: #2f9484;
+}
+
+.card-container {
+    padding: 20px;
+    border-radius: 10px;
+}
+
+
+.card {
+    background-color: #fff;
+    color: #333;
+    border-radius: 10px;
+    width: 300px;
+    height: 220px;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s, transform 0.3s;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    transform: scale(1.05);
+}
+
+.card i {
+    margin-top: 10px !important;
+    transition: color 0.3s;
+}
+
+.card:hover i {
+    color: #1A94C4;
+}
+
+.bi {
+    font-size: 50px;
+    transition: color 0.3s;
+}
+
+.card:hover .bi {
+    color: #1A94C4;
+}
+
+
+.card-content {
+    padding: 15px;
+    text-align: center;
+}
+
+.card-content h1 {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.card h1 {
+    margin: 10px 0;
+    font-size: 1.5em;
+    transition: color 0.3s;
+}
+
+.card:hover h1 {
+    color: #1A94C4;
+}
+
+.card p {
+    margin: 0;
+    font-size: 1em;
+}
+
+.classes-work {
+    background: rgba(28, 43, 75, 1);
+    color: #fff;
+}
+
+.classes-work h1,
+.classes-work p {
+    color: white;
+}
+
+.classes-container {
+    display: flex;
+    padding: 0 50px;
+    justify-content: space-between;
+}
+
+.mobile-container {
+    display: none;
+}
+
+.class-item {
+    flex: 1;
+    text-align: center;
+    margin: 10px;
+}
+
+.class-item h3 {
+    color: #5bc0de;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.bi-arrow-right,
+.bi-arrow-down {
+    margin: 30px;
+}
+
+@media (max-width: 767px) {
+    .classes-container {
+        display: none;
+    }
+
+    .mobile-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .bi-arrow-right,
+    .bi-arrow-down {
+        margin: 10px;
+    }
+
+    .why-si {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+.subject-container h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: rgba(28, 43, 75, 1);
+}
+
+.subject-container {
+    background-color: #fff;
+    color: #333;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s, transform 0.3s;
+}
+
+.subject-container:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    transform: scale(1.05);
+}
+
+.subject-container ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    justify-content: center;
+    column-gap: 10px;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.subject-container li {
+    background-color: rgba(28, 43, 75, 0.89);
+    padding: 10px 25px;
+    border-radius: 10px;
+    font-size: 16px;
+    width: 100px;
+    text-wrap: wrap;
+    font-weight: bold;
+    color: white;
+}
+
+.subject li {
+    background-color: rgba(28, 43, 75, 0.89);
+    padding: 10px 25px;
+    border-radius: 10px;
+    font-size: 16px;
+    width: 150px;
+    text-wrap: wrap;
+    font-weight: bold;
+    color: white;
+}
+
+.subject-container i {
+    font-size: 28px;
+    display: block;
+}
+
+.subject-container li:hover {
+    background-color: rgba(28, 43, 75, 1);
+    color: #1A94C4;
+    transform: scale(1.05);
+}
+
+.why-si {
+    display: flex;
+    column-gap: 20px;
+    align-items: center;
+}
+
+.why-si h4 {
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.sticky-circle-button {
+    position: fixed;
+    right: 0;
+    bottom: 10%;
+    margin-right: 0;
+    border-radius: 10px;
+    padding: 5px 20px;
+    background: none;
+    color: white;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
