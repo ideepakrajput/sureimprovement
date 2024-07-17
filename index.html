@@ -546,22 +546,15 @@
             .then(data => {
                 if (data.error) {
                     alert('Error: ' + data.error);
+                    form.reset();
                 } else {
                     alert('Email sent successfully!');
+                    form.reset();
                 }
             })
             .catch(error => {
                 console.error('Error:', error);
             });
-            
-            emailjs.send("service_9qs2s0m", "template_fl3w6cy", templateParams)
-                .then(function (response) {
-                    alert("Congratulations ! Your request sent Successfully !");
-                    // Optionally, you can reset the form after successful submission
-                    form.reset();
-                }, function (error) {
-                    console.error("Email failed to send:", error);
-                });
         }
     </script>
 </body>
