@@ -48,14 +48,8 @@
     <link href="assets/css/style.css" rel="stylesheet" />
     <!-- Google	Fonts -->
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,300' rel='stylesheet' type='text/css' />
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
     </script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <script type="text/javascript">
-        (function () {
-            emailjs.init("cqcvl9qqHCmehBGLg");
-        })();
-    </script>
 </head>
 
 <body>
@@ -532,6 +526,34 @@
                 from_name: `${form.elements['name'].value} | ${form.elements['phone'].value} | ${form.elements['email'].value}`,
                 message: form.elements['message'].value
             };
+            const name = form.elements['name'].value;
+            const phone = form.elements['phone'].value;
+            const email = form.elements['email'].value;
+            const message = form.elements['message'].value;
+
+            const to = "contact.deepakrajput@gmail.com";
+            const subject = `New message from ${name}`;
+            const text = `From: ${name} | Phone: ${phone} | Email: ${email}\nMessage: ${message}`;
+
+            fetch('http://93.127.194.225:8000/send-mail', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ to, subject, text })
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.error) {
+                    alert('Error: ' + data.error);
+                } else {
+                    alert('Email sent successfully!');
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            });
+            
             emailjs.send("service_9qs2s0m", "template_fl3w6cy", templateParams)
                 .then(function (response) {
                     alert("Congratulations ! Your request sent Successfully !");
