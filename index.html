@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
@@ -48,7 +48,6 @@
     <link href="assets/css/style.css" rel="stylesheet" />
     <!-- Google	Fonts -->
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,300' rel='stylesheet' type='text/css' />
-    </script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 
@@ -520,12 +519,7 @@
         function sendEmail(event) {
             event.preventDefault();
             const form = document.getElementById('contact-form');
-            const templateParams = {
-                to_name: "Munna",
-                subject: `New message from ${form.elements['name'].value} `,
-                from_name: `${form.elements['name'].value} | ${form.elements['phone'].value} | ${form.elements['email'].value}`,
-                message: form.elements['message'].value
-            };
+
             const name = form.elements['name'].value;
             const phone = form.elements['phone'].value;
             const email = form.elements['email'].value;
