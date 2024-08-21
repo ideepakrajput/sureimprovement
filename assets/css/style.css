@@ -579,3 +579,8 @@ h1::after {
     align-items: center;
     justify-content: center;
 }
+
+.course-img{
+    width: 500px;
+    cursor: pointer;
+}
