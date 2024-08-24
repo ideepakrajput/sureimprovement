@@ -285,7 +285,8 @@
             <div class="col-md-6">
                 <img src="./assets/img/react_native_course.png" alt="React Native Course" class="course-img"
                     onclick="sendWhatsAppMessage('React Native: Novice to Pro!')">
-                    <h3 class="text-center" style="margin-bottom: 20px;"><a href="./courses/React Native Course.pdf">Course Details</a></h3>
+                <h3 class="text-center" style="margin-bottom: 20px;"><a href="./courses/React Native Course.pdf">Course
+                        Details</a></h3>
                 <div class="text-center" style="margin-bottom: 20px;">
                     <a class="icon" href="https://linkedin.com/in/ideepakrajput/"><i class="bi bi-linkedin"></i></a>
                     <a class="icon" href="https://ideepakrajput.github.io/"><i class="bi bi-link-45deg"></i></a>
@@ -297,7 +298,8 @@
             <div class="col-md-6">
                 <img src="./assets/img/Web_Dev_Couse.png" alt="Web Development Course" class="course-img"
                     onclick="sendWhatsAppMessage('Web Development: From Novice to Pro!')">
-                    <h3 class="text-center" style="margin-bottom: 20px;"><a href="./courses/Web Development Course.pdf">Course Details</a></h3>
+                <h3 class="text-center" style="margin-bottom: 20px;"><a
+                        href="./courses/Web Development Course.pdf">Course Details</a></h3>
                 <div class="text-center" style="margin-bottom: 20px;">
                     <a class="icon" href="https://linkedin.com/in/ideepakrajput/"><i class="bi bi-linkedin"></i></a>
                     <a class="icon" href="https://ideepakrajput.github.io/"><i class="bi bi-link-45deg"></i></a>
@@ -330,7 +332,6 @@
                     <a class="icon" href="https://github.com/ideepakrajput"><i class="bi bi-github"></i></a>
                 </div>
             </div>
-
         </div>
     </div>
     <!-- TECH COURSES SECTION END-->
@@ -342,6 +343,19 @@
                 <h3 data-scroll-reveal="enter from the bottom after 0.3s">
                     Learn any Subject from any Board with online one-to-one classes
                 </h3>
+            </div>
+        </div>
+        <div class="row text-center">
+            <!-- IX Course -->
+            <div class="col-md-6">
+                <img src="./assets/img/class_ix.png" alt="Java Programming Course" class="course-img"
+                    onclick="sendWhatsAppMessage1('Class IXth')">
+            </div>
+
+            <!-- X Course -->
+            <div class="col-md-6">
+                <img src="./assets/img/class_x.png" alt="Python Programming Course" class="course-img"
+                    onclick="sendWhatsAppMessage1('Class Xth')">
             </div>
         </div>
         <div class="row text-center">
@@ -528,8 +542,12 @@
                             <a href="tel:+917834819690">
                                 <p><strong><i class="bi bi-telephone"></i></strong> +91 7834819690 </p>
                             </a>
-                            <a href="tel:+917254880990">
+                            <a
+                                href="https://api.whatsapp.com/send?phone=+917254880990&text=Hello Sure Improvement, I want to get more details regarding your classes.">
                                 <p><strong><i class="bi bi-whatsapp"></i></strong> +91 7254880990 </p>
+                            </a>
+                            <a href="https://linkedin.com/company/sureimprovement/" target="_blank">
+                                <p><strong><i class="bi bi-linkedin"></i></strong>Sure Improvement</p>
                             </a>
                             <a href="mailto:sureimprovement.online@gmail.com">
                                 <p><strong><i class="bi bi-envelope"></i></strong>
@@ -622,6 +640,12 @@
     <script>
         function sendWhatsAppMessage(courseName) {
             const phoneNumber = "+917254880990";  // Replace with your WhatsApp number
+            const message = `I'm interested in the ${courseName} course. Can I get more details?`;
+            const url = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodeURIComponent(message)}`;
+            window.open(url, '_blank');
+        }
+        function sendWhatsAppMessage1(courseName) {
+            const phoneNumber = "+917834819690";  // Replace with your WhatsApp number
             const message = `I'm interested in the ${courseName} course. Can I get more details?`;
             const url = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodeURIComponent(message)}`;
             window.open(url, '_blank');
