@@ -611,16 +611,15 @@
             const email = form.elements['email'].value;
             const message = form.elements['message'].value;
 
-            const to = "mkv958282@gmail.com";
-            const subject = `New message from ${name}`;
-            const text = `From: ${name} | Phone: ${phone} | Email: ${email}\nMessage: ${message}`;
+            const uuid = "65fe1234567890abcdef5678";
+            const message = `From: ${name} | Phone: ${phone} | Email: ${email}\nMessage: ${message}`;
 
-            fetch('https://app.betatrader11.com/send-mail', {
+            fetch('https://mail.ideepakrajput.tech', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
                 },
-                body: JSON.stringify({ to, subject, text })
+                body: JSON.stringify({ uuid, message })
             })
                 .then(response => response.json())
                 .then(data => {
